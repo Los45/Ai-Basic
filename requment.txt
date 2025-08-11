@@ -1,0 +1,6 @@
+nltk
+scikit-learn
+sentence-transformers
+
+#MadeByFanzz
+#use python install requirement to install library 

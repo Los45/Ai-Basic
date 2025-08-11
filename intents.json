@@ -1,0 +1,487 @@
+{
+  "intents": [
+    {
+      "tag": "python_overview",
+      "patterns": [
+        "Apa itu Python?",
+        "Python digunakan untuk apa?",
+        "Kenapa harus belajar Python?",
+        "Fungsi Python"
+      ],
+      "responses": [
+        "Python adalah bahasa pemrograman tingkat tinggi, serbaguna, dan mudah dibaca. Cocok untuk web, data science, automasi, AI, dan banyak lagi."
+      ]
+    },
+    {
+      "tag": "python_error_indentation",
+      "patterns": [
+        "Error indentation di Python artinya apa?",
+        "Unexpected indent di Python",
+        "Cara atasi indentation error"
+      ],
+      "responses": [
+        "Error indentation terjadi karena spasi/tab tidak konsisten. Gunakan 4 spasi per level atau tab secara konsisten."
+      ]
+    },
+    {
+      "tag": "javascript_overview",
+      "patterns": [
+        "Apa itu JavaScript?",
+        "JavaScript buat apa?",
+        "Kenapa JavaScript penting di web?"
+      ],
+      "responses": [
+        "JavaScript adalah bahasa pemrograman utama di browser untuk membuat halaman web interaktif."
+      ]
+    },
+    {
+      "tag": "typescript_overview",
+      "patterns": [
+        "Apa itu TypeScript?",
+        "Perbedaan TypeScript dan JavaScript?",
+        "Kelebihan TypeScript"
+      ],
+      "responses": [
+        "TypeScript adalah superset JavaScript yang menambahkan static typing sehingga kode lebih terstruktur dan mudah dipelihara."
+      ]
+    },
+    {
+      "tag": "java_overview",
+      "patterns": [
+        "Apa itu Java?",
+        "Java digunakan untuk apa?",
+        "Kenapa Java populer?"
+      ],
+      "responses": [
+        "Java adalah bahasa pemrograman berorientasi objek yang berjalan di JVM, terkenal stabil dan digunakan luas di enterprise serta Android."
+      ]
+    },
+    {
+      "tag": "c_overview",
+      "patterns": [
+        "Apa itu bahasa C?",
+        "Bahasa C fungsinya apa?",
+        "Kenapa belajar C?"
+      ],
+      "responses": [
+        "C adalah bahasa pemrograman prosedural tingkat menengah yang cepat dan banyak dipakai untuk sistem operasi dan embedded system."
+      ]
+    },
+    {
+      "tag": "cpp_overview",
+      "patterns": [
+        "Apa itu C++?",
+        "Fungsi C++",
+        "Kenapa C++ sulit?"
+      ],
+      "responses": [
+        "C++ adalah pengembangan dari C dengan fitur OOP dan template; digunakan untuk game, sistem besar, dan aplikasi performa tinggi."
+      ]
+    },
+    {
+      "tag": "csharp_overview",
+      "patterns": [
+        "Apa itu C#?",
+        "C# digunakan dimana?",
+        "Apakah C# sama dengan C++?"
+      ],
+      "responses": [
+        "C# adalah bahasa pemrograman modern dari Microsoft untuk .NET, cocok untuk aplikasi desktop, web (ASP.NET), dan game (Unity)."
+      ]
+    },
+    {
+      "tag": "php_overview",
+      "patterns": [
+        "PHP itu apa?",
+        "PHP masih relevan?",
+        "PHP untuk apa?"
+      ],
+      "responses": [
+        "PHP adalah bahasa scripting server-side yang banyak dipakai di web, powering WordPress dan berbagai CMS."
+      ]
+    },
+    {
+      "tag": "ruby_overview",
+      "patterns": [
+        "Apa itu Ruby?",
+        "Ruby on Rails fungsinya apa?",
+        "Kenapa Ruby disukai?"
+      ],
+      "responses": [
+        "Ruby adalah bahasa pemrograman dinamis fokus pada produktivitas dan kesenangan programmer; Rails adalah framework web populernya."
+      ]
+    },
+    {
+      "tag": "go_overview",
+      "patterns": [
+        "Apa itu Go?",
+        "GoLang buat apa?",
+        "Kelebihan Go"
+      ],
+      "responses": [
+        "Go adalah bahasa dari Google yang simpel, cepat kompilasi, dan punya concurrency bawaan; ideal untuk layanan backend."
+      ]
+    },
+    {
+      "tag": "rust_overview",
+      "patterns": [
+        "Apa itu Rust?",
+        "Keunggulan Rust",
+        "Rust dipakai untuk apa?"
+      ],
+      "responses": [
+        "Rust adalah bahasa sistem modern dengan fokus safety tanpa garbage collector, cocok untuk sistem performa tinggi."
+      ]
+    },
+    {
+      "tag": "kotlin_overview",
+      "patterns": [
+        "Apa itu Kotlin?",
+        "Kotlin vs Java?",
+        "Kenapa Kotlin populer?"
+      ],
+      "responses": [
+        "Kotlin adalah bahasa modern yang berjalan di JVM, interoperable dengan Java dan jadi bahasa utama Android."
+      ]
+    },
+    {
+      "tag": "swift_overview",
+      "patterns": [
+        "Apa itu Swift?",
+        "Swift buat apa?",
+        "Kelebihan Swift"
+      ],
+      "responses": [
+        "Swift adalah bahasa dari Apple untuk iOS/macOS development, cepat, aman, dan modern."
+      ]
+    },
+    {
+      "tag": "html_basics",
+      "patterns": [
+        "Apa itu HTML?",
+        "HTML dipakai untuk apa?",
+        "Peran HTML"
+      ],
+      "responses": [
+        "HTML adalah bahasa markup untuk membuat struktur halaman web."
+      ]
+    },
+    {
+      "tag": "css_basics",
+      "patterns": [
+        "Apa itu CSS?",
+        "Fungsi CSS",
+        "CSS buat apa?"
+      ],
+      "responses": [
+        "CSS digunakan untuk mengatur tampilan halaman web: layout, warna, font, animasi, dll."
+      ]
+    },
+    {
+      "tag": "tailwind_overview",
+      "patterns": [
+        "Apa itu Tailwind CSS?",
+        "Kelebihan Tailwind?",
+        "Tailwind vs Bootstrap"
+      ],
+      "responses": [
+        "Tailwind adalah utility-first CSS framework yang memungkinkan styling cepat dengan class langsung di HTML."
+      ]
+    },
+    {
+      "tag": "bootstrap_overview",
+      "patterns": [
+        "Apa itu Bootstrap?",
+        "Gunakan Bootstrap untuk apa?",
+        "Bootstrap masih dipakai?"
+      ],
+      "responses": [
+        "Bootstrap adalah framework CSS yang menyediakan komponen UI siap pakai dan grid system responsif."
+      ]
+    },
+    {
+      "tag": "react_overview",
+      "patterns": [
+        "Apa itu React?",
+        "React untuk apa?",
+        "Kenapa React populer?"
+      ],
+      "responses": [
+        "React adalah library JavaScript dari Meta untuk membangun UI berbasis komponen, menggunakan virtual DOM."
+      ]
+    },
+    {
+      "tag": "next_overview",
+      "patterns": [
+        "Apa itu Next.js?",
+        "Kelebihan Next.js?",
+        "Next.js vs React?"
+      ],
+      "responses": [
+        "Next.js adalah framework React dengan fitur server-side rendering, static generation, dan routing otomatis."
+      ]
+    },
+    {
+      "tag": "vue_overview",
+      "patterns": [
+        "Apa itu Vue.js?",
+        "Kenapa pakai Vue?",
+        "Vue vs React?"
+      ],
+      "responses": [
+        "Vue.js adalah framework JavaScript progresif yang ringan dan mudah dipelajari untuk membangun UI interaktif."
+      ]
+    },
+    {
+      "tag": "angular_overview",
+      "patterns": [
+        "Apa itu Angular?",
+        "Angular digunakan untuk apa?",
+        "Angular vs React?"
+      ],
+      "responses": [
+        "Angular adalah framework frontend full-featured dari Google menggunakan TypeScript."
+      ]
+    },
+    {
+      "tag": "express_overview",
+      "patterns": [
+        "Apa itu Express.js?",
+        "Express buat apa?",
+        "Framework backend Node.js"
+      ],
+      "responses": [
+        "Express.js adalah framework minimalis untuk Node.js, memudahkan pembuatan REST API dan server web."
+      ]
+    },
+    {
+      "tag": "laravel_overview",
+      "patterns": [
+        "Apa itu Laravel?",
+        "Laravel digunakan untuk apa?",
+        "Kenapa Laravel populer?"
+      ],
+      "responses": [
+        "Laravel adalah framework PHP modern dengan sintaks elegan, menyederhanakan pengembangan web backend."
+      ]
+    },
+    {
+      "tag": "django_overview",
+      "patterns": [
+        "Apa itu Django?",
+        "Django versus Flask?",
+        "Kelebihan Django"
+      ],
+      "responses": [
+        "Django adalah framework web Python full-stack dengan ORM, admin interface, dan keamanan built-in."
+      ]
+    },
+    {
+      "tag": "flask_overview",
+      "patterns": [
+        "Apa itu Flask?",
+        "Flask buat apa?",
+        "Flask vs Django"
+      ],
+      "responses": [
+        "Flask adalah microframework Python yang ringan dan fleksibel untuk membuat API dan aplikasi web kecil."
+      ]
+    },
+    {
+      "tag": "fastapi_overview",
+      "patterns": [
+        "Apa itu FastAPI?",
+        "Keunggulan FastAPI",
+        "FastAPI vs Flask"
+      ],
+      "responses": [
+        "FastAPI adalah framework Python modern untuk membangun API cepat dengan type hints dan performa tinggi."
+      ]
+    },
+    {
+      "tag": ".net_overview",
+      "patterns": [
+        "Apa itu .NET?",
+        ".NET digunakan untuk apa?",
+        "Bedanya .NET Framework dan .NET Core"
+      ],
+      "responses": [
+        ".NET adalah platform dari Microsoft untuk membangun aplikasi deskop, web, cloud, dan mobile."
+      ]
+    },
+    {
+      "tag": "node_overview",
+      "patterns": [
+        "Apa itu Node.js?",
+        "Node.js buat apa?",
+        "Kenapa Node populer?"
+      ],
+      "responses": [
+        "Node.js adalah runtime JavaScript di server berbasis V8, memungkinkan JS digunakan di backend."
+      ]
+    },
+    {
+      "tag": "jquery_overview",
+      "patterns": [
+        "Masih perlu jQuery?",
+        "jQuery itu apa?",
+        "jQuery vs JavaScript murni"
+      ],
+      "responses": [
+        "jQuery adalah library JS lama untuk manipulasi DOM; kini tergantikan oleh framework modern tetapi masih ada di proyek legacy."
+      ]
+    },
+    {
+      "tag": "spring_overview",
+      "patterns": [
+        "Apa itu Spring Boot?",
+        "Spring framework untuk apa?",
+        "Java Spring"
+      ],
+      "responses": [
+        "Spring Boot adalah framework Java yang mempermudah pembuatan aplikasi Spring dengan konfigurasi minimal."
+      ]
+    },
+    {
+      "tag": "sql_overview",
+      "patterns": [
+        "Apa itu SQL?",
+        "Contoh query SQL SELECT",
+        "SQL dipakai dimana?"
+      ],
+      "responses": [
+        "SQL adalah bahasa untuk mengelola data di RDBMS. Contoh: SELECT * FROM users WHERE age > 18;"
+      ]
+    },
+    {
+      "tag": "nosql_mongo_overview",
+      "patterns": [
+        "Apa itu MongoDB?",
+        "NoSQL itu apa?",
+        "MongoDB vs MySQL"
+      ],
+      "responses": [
+        "MongoDB adalah database NoSQL dokumen yang menyimpan data dalam format JSON (BSON)."
+      ]
+    },
+    {
+      "tag": "git_overview",
+      "patterns": [
+        "Apa itu Git?",
+        "Fungsi git clone?",
+        "Git vs GitHub"
+      ],
+      "responses": [
+        "Git adalah sistem version control; GitHub adalah platform hosting repo Git."
+      ]
+    },
+    {
+      "tag": "docker_overview",
+      "patterns": [
+        "Apa itu Docker?",
+        "Docker digunakan untuk apa?",
+        "Kelebihan Docker"
+      ],
+      "responses": [
+        "Docker adalah platform containerization yang memaketkan aplikasi beserta dependensinya agar berjalan konsisten."
+      ]
+    },
+    {
+      "tag": "rest_api_overview",
+      "patterns": [
+        "Apa itu REST API?",
+        "Bedanya REST dan SOAP?",
+        "Cara buat REST API"
+      ],
+      "responses": [
+        "REST API adalah gaya arsitektur untuk komunikasi client‑server berbasis HTTP dengan endpoint resource."
+      ]
+    },
+    {
+      "tag": "tensorflow_overview",
+      "patterns": [
+        "Apa itu TensorFlow?",
+        "TensorFlow buat apa?",
+        "Perbedaan TensorFlow dan PyTorch"
+      ],
+      "responses": [
+        "TensorFlow adalah library open‑source dari Google untuk machine learning dan deep learning."
+      ]
+    },
+    {
+      "tag": "pytorch_overview",
+      "patterns": [
+        "Apa itu PyTorch?",
+        "PyTorch dipakai dimana?",
+        "PyTorch vs TensorFlow"
+      ],
+      "responses": [
+        "PyTorch adalah library deep learning dari Meta dengan interface Pythonik dan dynamic computation graph."
+      ]
+    },
+    {
+      "tag": "sklearn_overview",
+      "patterns": [
+        "Apa itu scikit-learn?",
+        "Fungsi scikit-learn",
+        "scikit-learn vs TensorFlow"
+      ],
+      "responses": [
+        "scikit‑learn adalah library ML Python klasik yang menyediakan algoritma machine learning tradisional."
+      ]
+    },
+    {
+      "tag": "opencv_overview",
+      "patterns": [
+        "Apa itu OpenCV?",
+        "OpenCV untuk apa?",
+        "OpenCV image processing"
+      ],
+      "responses": [
+        "OpenCV adalah library komputer‑visi open‑source untuk pemrosesan gambar dan video."
+      ]
+    },
+    {
+      "tag": "pandas_overview",
+      "patterns": [
+        "Apa itu Pandas?",
+        "Pandas dipakai untuk apa?",
+        "DataFrame Pandas"
+      ],
+      "responses": [
+        "Pandas adalah library Python untuk analisis data, menyediakan struktur DataFrame yang kuat."
+      ]
+    },
+    {
+      "tag": "numpy_overview",
+      "patterns": [
+        "Apa itu NumPy?",
+        "NumPy digunakan untuk apa?",
+        "Array NumPy"
+      ],
+      "responses": [
+        "NumPy adalah library Python untuk komputasi numerik cepat berbasis array multi‑dimensi."
+      ]
+    },
+    {
+      "tag": "nlp_overview",
+      "patterns": [
+        "Apa itu NLP?",
+        "Natural Language Processing itu apa?",
+        "Contoh NLP"
+      ],
+      "responses": [
+        "NLP adalah cabang AI yang memproses teks/bahasa manusia, contohnya chatbot, sentiment analysis."
+      ]
+    },
+    {
+      "tag": "java overview",
+      "patterns": [
+        "java script"
+      ],
+      "responses": [
+        "Js Adalah singkatan dari JavaScript"
+      ]
+    }
+  ]
+}
