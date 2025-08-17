@@ -188,3 +188,16 @@ while True:
                 break
             else:
                 print("Pilihan tidak valid. Silakan coba lagi.")
+
+    print("🤖 Coba pertanyaan tadi lagi.\n")
+    print("🤖 Berhasil belajar! Coba pertanyaan tadi lagi.\n")
+
+#ganti model 
+    encoder = SentenceTransformer(MODEL_NAME_FALLBACK)
+    embeddings = encoder.encode(patterns, show_progress_bar=True)
+
+    # Simpan embeddings baru
+    with EMBED_FILE.open("wb") as fp:
+        pickle.dump({"model_name": MODEL_NAME_FALLBACK, "embeddings": embeddings, "patterns": patterns, "tags": pattern_tags}, fp)
+
+    print("✅ Embedding selesai & disimpan →", EMBED_FILE)
