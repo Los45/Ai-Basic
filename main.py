@@ -79,6 +79,11 @@ while True:
             "responses": [new_resp]
         })
 
+# Update embeddings
+    if new_tag not in pattern_tags:   
+        pattern_tags.append(new_tag)
+        embeddings = util.torch.cat([util.torch.tensor(embeddings), util.torch.tensor(encoder.encode(user_input)).unsqueeze(0)], dim=0)
+
     # Simpan intents.json
     DATA_FILE.write_text(json.dumps(intents_json, indent=2, ensure_ascii=False), encoding="utf-8")
     print("🧠 Disimpan di intents.json & memory lokal.")
