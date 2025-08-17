@@ -79,7 +79,7 @@ while True:
             "responses": [new_resp]
         })
 
-# Update embeddings
+    # Update embeddings
     if new_tag not in pattern_tags:   
         pattern_tags.append(new_tag)
         embeddings = util.torch.cat([util.torch.tensor(embeddings), util.torch.tensor(encoder.encode(user_input)).unsqueeze(0)], dim=0)
@@ -107,3 +107,84 @@ while True:
     RESPONSES.setdefault(new_tag, []).append(new_resp)
 
     print("🤖 Berhasil belajar! Coba pertanyaan tadi lagi.\n")
+
+
+    # Simpan perubahan ke file embeddings
+    with EMBED_FILE.open("wb") as fp:
+        pickle.dump({"model_name": MODEL_NAME_FALLBACK, "embeddings": embeddings, "patterns": patterns, "tags": pattern_tags}, fp)
+
+    print("✅ Embedding selesai & disimpan →", EMBED_FILE)
+    print("🧠 Disimpan di intents.json & memory lokal.")
+    print("🤖 Berhasil belajar! Coba pertanyaan tadi lagi.\n")
+
+
+    #admin: Tambah fungsi untuk menghapus tag
+    def delete_tag(tag):
+        """Hapus tag dan semua pola terkait dari memori."""
+        if tag in pattern_tags:
+            idx = pattern_tags.index(tag)
+            del pattern_tags[idx]
+            del patterns[idx]
+            del embeddings[idx]
+            RESPONSES.pop(tag, None)
+            print(f"Tag '{tag}' berhasil dihapus.")
+        else:
+            print(f"Tag '{tag}' tidak ditemukan dalam memori.")
+
+    def list_tags():
+        """Tampilkan semua tag yang ada."""
+        if pattern_tags:
+            print("Daftar tag yang tersedia:")
+            for tag in pattern_tags:
+                print(f"- {tag}")
+        else:
+            print("Tidak ada tag yang tersedia.")
+
+    def clear_memory():
+        """Hapus semua data dari memori."""
+        global patterns, pattern_tags, embeddings, RESPONSES
+        patterns = []
+        pattern_tags = []
+        embeddings = []
+        RESPONSES = {}
+        print("Semua data dalam memori telah dihapus.")
+    
+    #admin login system
+
+    def admin_login():
+        """Sistem login admin sederhana."""
+        password = "admin123"  # Ganti dengan password yang lebih aman
+        attempts = 3 
+
+        while attempts > 0:
+            user_input = input("Masukkan password admin: ")
+            if user_input == password:
+                print("Login berhasil! Selamat datang, Admin.")
+                return True
+            else:
+                attempts -= 1
+                print(f"Password salah. Sisa percobaan: {attempts}")
+        print("Akses ditolak. Terlalu banyak percobaan salah.")
+        return False
+    # Cek apakah admin login
+    if admin_login(): 
+        while True:
+            print("\nMenu Admin:")
+            print("1. Hapus tag")
+            print("2. Tampilkan semua tag")
+            print("3. Hapus semua data memori")
+            print("4. Keluar")
+            choice = input("Pilih opsi (1-4): ")
+
+            if choice == "1":
+                tag_to_delete = input("Masukkan tag yang ingin dihapus: ").strip()
+                delete_tag(tag_to_delete)
+            elif choice == "2":
+                list_tags()
+            elif choice == "3":
+                clear_memory()
+            elif choice == "4":
+                print("Keluar dari menu admin.")
+                break
+            else:
+                print("Pilihan tidak valid. Silakan coba lagi.")

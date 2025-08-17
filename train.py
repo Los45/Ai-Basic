@@ -47,3 +47,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    # Update embeddings dengan penjelasan pengguna
+    if teach:   
+        new_embedding = encoder.encode(teach)
+        embeddings = util.semantic_search(new_embedding, embeddings, top_k=1)[0]
+        best_idx = int(embeddings[0]["corpus_id"])
+        pattern_tags[best_idx] = teach
